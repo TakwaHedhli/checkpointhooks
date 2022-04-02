@@ -1,0 +1,22 @@
+.my-card{
+    margin : 50px ;
+    width: 280px ;
+    height: 600px;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+}
+.my-card img{
+    width: 100%;
+    border-radius: 20px;
+}
+.my-card h1{
+    color: darkgoldenrod;
+}
+.my-card{
+    position: relative;
+}
+.my-card:hover{
+    padding: 10px;
+    border: 1px solid burlywood;
+    transition: 0.4s;
+}
