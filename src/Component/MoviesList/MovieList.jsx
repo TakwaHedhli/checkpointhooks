@@ -16,4 +16,4 @@ const MovieList = ({data, title, rate}) => {
   )
 }
 
-export default MovieList
+export default MovieList;

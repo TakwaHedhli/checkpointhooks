@@ -6,6 +6,8 @@ import MyNav from './Component/MyNav/MyNav';
 import MoviesData from './Component/MoviesData/Data';
 import MovieList from './Component/MoviesList/MovieList';
 import AddMovie from './Component/AddCard/AddMovie';
+import {Routes , Route } from 'react-router-dom';
+import MovieDetails from './Component/MovieDeatils/MovieDetails';
 
 function App() {
   const [title, setTitle] = useState("");
@@ -28,7 +30,11 @@ function App() {
      
       <MyNav  handleTitle={handleTitle} handleRate={handleRate}/>
       <AddMovie handleData={handleData}/>
-      <MovieList data={data} title={title} rate={rate}/>
+      <Routes>
+        <Route path="/" 
+        element={<MovieList data={data} title={title} rate={rate}/>}/>
+      <Route path="/movie/:id" element={<MovieDetails/>}/>
+      </Routes>
     </div>
   );
 }
